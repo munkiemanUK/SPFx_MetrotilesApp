@@ -6,7 +6,22 @@
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
-    "isDomainIsolated": false
+    "isDomainIsolated": false,
+    "features": [{
+      "title": "asset-deployment-webpart-client-side-solution",
+      "description": "asset-deployment-webpart-client-side-solution",
+      "id": "523fe887-ced5-4036-b564-8dad5c6c6e24",     // <-- Update 'id' with a new GUID
+      "version": "1.0.0.0",
+      "assets": {
+        "elementManifests": [
+          "elements-list1.xml",
+          "elements-list2.xml"
+        ],
+        "elementFiles":[
+          "schema.xml"
+        ]
+      }
+    }]    
   },
   "paths": {
     "zippedPackage": "solution/metrotiles-app.sppkg"
