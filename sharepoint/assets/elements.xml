@@ -37,10 +37,10 @@
     </ContentType> 
 
     <ListInstance 
-            CustomSchema="schema-list2.xml"
+            CustomSchema="schema.xml"
             FeatureId="00bfea71-de22-43b2-a848-c05709900100"
-            Title="SPFx List 2" 
-            Description="SPFx List 2"
+            Title="SPFx List" 
+            Description="SPFx List"
             TemplateType="100"
             Url="Lists/SPFxList">
     </ListInstance>
