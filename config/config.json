@@ -11,7 +11,21 @@
       ]
     }
   },
-  "externals": {},
+  "externals": {
+    "jquery": {
+      "path":"./node_modules/jquery/dist/jquery.min.js",  
+      "globalName": "jquery"
+    },  
+    "popper.js": {
+      "path":"./node_modules/popper.js/dist/popper.min.js",
+      "globalName": "popper"     
+    },       
+    "bootstrap": {
+      "path": "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap",
+      "globalDependencies": ["popper.js"]
+    }     
+  },
   "localizedResources": {
     "MetrotilesWebPartStrings": "lib/webparts/metrotiles/loc/{locale}.js"
   }

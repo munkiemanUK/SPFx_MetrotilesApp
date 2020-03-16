@@ -1,21 +1,20 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "metrotiles-app-client-side-solution",
+    "name": "Metrotiles",
     "id": "98ccd11f-cb46-431c-9435-032f64246639",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "features": [{
-      "title": "asset-deployment-webpart-client-side-solution",
+      "title": "Metrotiles",
       "description": "asset-deployment-webpart-client-side-solution",
-      "id": "523fe887-ced5-4036-b564-8dad5c6c6e24",     // <-- Update 'id' with a new GUID
+      "id": "745D3210-1E94-4657-BB5C-23669ADA5324",     
       "version": "1.0.0.0",
       "assets": {
         "elementManifests": [
-          "elements-list1.xml",
-          "elements-list2.xml"
+          "elements.xml"
         ],
         "elementFiles":[
           "schema.xml"

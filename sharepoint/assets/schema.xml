@@ -11,9 +11,8 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <Toolbar Type="Standard" />
         <ViewFields>
-          <FieldRef Name="LinkTitle"></FieldRef>
-          <FieldRef Name="SPFxAmount"></FieldRef>
-          <FieldRef Name="SPFxCostCenter"></FieldRef>
+          <FieldRef Name="TileName"></FieldRef>
+          <FieldRef Name="TileBrowse"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>

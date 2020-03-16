@@ -1,37 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
 
-    <Field ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}"
-            Name="SPFxAmount"
-            DisplayName="Amount"
-            Type="Currency"
-            Decimals="2"
-            Min="0"
-            Required="FALSE"
-            Group="SPFx Columns" />
+    <Field ID="{3AF28192-2CEC-4AF0-BA99-60443B2B1AD3}"
+            Name="TileName"
+            DisplayName="Tile Name"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotiles" />
+
+    <Field ID="{0CC020FC-BC85-4241-8CB3-EDE52AF1F916}"
+            Name="TileURL"
+            DisplayName="Tile URL"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotiles" />
+
+    <Field ID="{073F365E-6153-42CB-99F0-972686FFFBCF}"
+            Name="TileImage"
+            DisplayName="Tile Image"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotiles" />
+
+    <Field ID="{02F2D0F7-902F-4660-9459-2106FD620E9C}"
+            Name="TileDescription"
+            DisplayName="Tile Description"
+            Type="Text"
+            Required="TRUE"
+            Group="Metrotiles" />
 
     <Field ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}"
-            Name="SPFxCostCenter"
-            DisplayName="Cost Center"
+            Name="TileBrowse"
+            DisplayName="Tile Browse"
             Type="Choice"
-            Required="FALSE"
-            Group="SPFx Columns">
+            Required="TRUE"
+            Group="Metrotiles">
+
         <CHOICES>
-        <CHOICE>Administration</CHOICE>
-        <CHOICE>Information</CHOICE>
-        <CHOICE>Facilities</CHOICE>
-        <CHOICE>Operations</CHOICE>
-        <CHOICE>Sales</CHOICE>
-        <CHOICE>Marketing</CHOICE>
+        <CHOICE>_self</CHOICE>
+        <CHOICE>_blank</CHOICE>
+        <CHOICE>_top</CHOICE>
+        <CHOICE>_parent</CHOICE>
         </CHOICES>
     </Field>
 
     <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" 
-            Name="Cost Center" 
-            Group="SPFx Content Types" 
-            Description="Sample content types from web part solution">
+            Name="Metrotiles" 
+            Group="Metrotiles Content Types" 
+            Description="fields used in the metrotiles app">
         <FieldRefs>
-            <FieldRef ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" /> 
+            <FieldRef ID="{3AF28192-2CEC-4AF0-BA99-60443B2B1AD3}" /> 
             <FieldRef ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" />
         </FieldRefs>
     </ContentType> 
@@ -39,10 +57,10 @@
     <ListInstance 
             CustomSchema="schema.xml"
             FeatureId="00bfea71-de22-43b2-a848-c05709900100"
-            Title="SPFx List" 
-            Description="SPFx List"
+            Title="Metrotiles" 
+            Description="metrotiles List"
             TemplateType="100"
-            Url="Lists/SPFxList">
+            Url="Lists/metrotiles">
     </ListInstance>
 
 </Elements>
