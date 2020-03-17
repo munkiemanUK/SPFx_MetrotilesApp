@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{9D83E884-4C8A-40FA-BC60-30AADBC73A1B}"
+            Name="TileOrder"
+            DisplayName="Tile Order"
+            Type="Number"
+            Decimals="0"
+            Min="1"
+            Max="18"            
+            Required="TRUE"
+            Group="Metrotiles" />
 
     <Field ID="{3AF28192-2CEC-4AF0-BA99-60443B2B1AD3}"
             Name="TileName"
@@ -45,11 +54,15 @@
     </Field>
 
     <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" 
-            Name="Metrotiles" 
+            Name="MetrotilesContentType" 
             Group="Metrotiles Content Types" 
             Description="fields used in the metrotiles app">
         <FieldRefs>
+            <FieldRef ID="{9D83E884-4C8A-40FA-BC60-30AADBC73A1B}" />
             <FieldRef ID="{3AF28192-2CEC-4AF0-BA99-60443B2B1AD3}" /> 
+            <FieldRef ID="{0CC020FC-BC85-4241-8CB3-EDE52AF1F916}" />
+            <FieldRef ID="{073F365E-6153-42CB-99F0-972686FFFBCF}" />
+            <FieldRef ID="{02F2D0F7-902F-4660-9459-2106FD620E9C}" />
             <FieldRef ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" />
         </FieldRefs>
     </ContentType> 
@@ -61,6 +74,34 @@
             Description="metrotiles List"
             TemplateType="100"
             Url="Lists/metrotiles">
+        <Data>
+                <Rows>
+                        <Row>
+                                <Field Name="TileOrder">1</Field>
+                                <Field Name="TileName">Coming Soon</Field>
+                                <Field Name="TileURL">/</Field>
+                                <Field Name="TileImage">/PublishingImages/metrotiles/blank01.png</Field>
+                                <Field Name="TileDescription">Blank tile awaiting new details</Field>
+                                <Field Name="TileBrowse">_blank</Field>
+                        </Row>
+                        <Row>
+                                <Field Name="TileOrder">2</Field>
+                                <Field Name="TileName">Coming Soon</Field>
+                                <Field Name="TileURL">/</Field>
+                                <Field Name="TileImage">/PublishingImages/metrotiles/blank01.png</Field>
+                                <Field Name="TileDescription">Blank tile awaiting new details</Field>
+                                <Field Name="TileBrowse">_blank</Field>
+                        </Row>
+                        <Row>
+                                <Field Name="TileOrder">3</Field>
+                                <Field Name="TileName">Coming Soon</Field>
+                                <Field Name="TileURL">/</Field>
+                                <Field Name="TileImage">/PublishingImages/metrotiles/blank01.png</Field>
+                                <Field Name="TileDescription">Blank tile awaiting new details</Field>
+                                <Field Name="TileBrowse">_blank</Field>
+                        </Row>
+                </Rows>
+        </Data>           
     </ListInstance>
 
 </Elements>

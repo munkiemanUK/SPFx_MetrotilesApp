@@ -11,12 +11,16 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <Toolbar Type="Standard" />
         <ViewFields>
+          <FieldRef Name="TileOrder"></FieldRef>
           <FieldRef Name="TileName"></FieldRef>
+          <FieldRef Name="TileURL"></FieldRef>
+          <FieldRef Name="TileDescription"></FieldRef>
+          <FieldRef Name="TileImage"></FieldRef>
           <FieldRef Name="TileBrowse"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>
-            <FieldRef Name="ID" />
+            <FieldRef Name="TileOrder" />
           </OrderBy>
         </Query>
       </View>

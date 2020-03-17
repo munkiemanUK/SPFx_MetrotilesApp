@@ -3,15 +3,15 @@
   "solution": {
     "name": "Metrotiles",
     "id": "98ccd11f-cb46-431c-9435-032f64246639",
-    "version": "1.0.0.0",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "features": [{
       "title": "Metrotiles",
-      "description": "asset-deployment-webpart-client-side-solution",
+      "description": "Metrotiles links app",
       "id": "745D3210-1E94-4657-BB5C-23669ADA5324",     
-      "version": "1.0.0.0",
+      "version": "1.0.0.2",
       "assets": {
         "elementManifests": [
           "elements.xml"
